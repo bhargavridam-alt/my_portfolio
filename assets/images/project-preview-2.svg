@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414" />
+      <stop offset="100%" stop-color="#080808" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-grad-2)" />
+  
+  <!-- Subtle Grid Accent -->
+  <line x1="70" y1="250" x2="730" y2="250" stroke="#222222" stroke-width="1" />
+  <line x1="400" y1="60" x2="400" y2="440" stroke="#222222" stroke-width="1" />
+
+  <!-- Frame -->
+  <rect x="70" y="55" width="660" height="390" rx="8" fill="#151515" stroke="#333333" stroke-width="1.5" />
+  
+  <!-- Header bar -->
+  <rect x="70" y="55" width="660" height="40" rx="8" fill="#1e1e1e" />
+  <line x1="70" y1="95" x2="730" y2="95" stroke="#2c2c2c" stroke-width="1" />
+  <circle cx="95" cy="75" r="5" fill="#444444" />
+  <circle cx="112" cy="75" r="5" fill="#333333" />
+  <circle cx="129" cy="75" r="5" fill="#333333" />
+  <text x="400" y="79" fill="#888888" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="12" text-anchor="middle" letter-spacing="1">DASHBOARD // REALTIME_ANALYTICS_V2</text>
+
+  <!-- Metric Panels -->
+  <!-- Metric Box 1 -->
+  <rect x="95" y="115" width="180" height="90" rx="4" fill="#0d0d0d" stroke="#262626" stroke-width="1" />
+  <text x="110" y="135" fill="#777777" font-family="monospace" font-size="10">TPS / THROUGHPUT</text>
+  <text x="110" y="172" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">142,850</text>
+  <text x="110" y="193" fill="#a1a1aa" font-family="monospace" font-size="9">+14.2% vs baseline</text>
+
+  <!-- Metric Box 2 -->
+  <rect x="290" y="115" width="180" height="90" rx="4" fill="#0d0d0d" stroke="#262626" stroke-width="1" />
+  <text x="305" y="135" fill="#777777" font-family="monospace" font-size="10">QUERY LATENCY</text>
+  <text x="305" y="172" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">1.18 ms</text>
+  <text x="305" y="193" fill="#a1a1aa" font-family="monospace" font-size="9">sub-millisecond target</text>
+
+  <!-- Metric Box 3 -->
+  <rect x="485" y="115" width="220" height="90" rx="4" fill="#0d0d0d" stroke="#262626" stroke-width="1" />
+  <text x="500" y="135" fill="#777777" font-family="monospace" font-size="10">CLUSTER STATUS</text>
+  <text x="500" y="172" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">ACTIVE [32/32]</text>
+  <text x="500" y="193" fill="#a1a1aa" font-family="monospace" font-size="9">Zero dropped packets</text>
+
+  <!-- Big Interactive Chart Area -->
+  <rect x="95" y="220" width="610" height="195" rx="4" fill="#0d0d0d" stroke="#262626" stroke-width="1" />
+  <!-- Horizontal gridlines -->
+  <line x1="120" y1="260" x2="680" y2="260" stroke="#1f1f1f" stroke-width="1" />
+  <line x1="120" y1="300" x2="680" y2="300" stroke="#1f1f1f" stroke-width="1" />
+  <line x1="120" y1="340" x2="680" y2="340" stroke="#1f1f1f" stroke-width="1" />
+  <line x1="120" y1="380" x2="680" y2="380" stroke="#262626" stroke-width="1" />
+  
+  <!-- Waveform / Stepped Area Data Line -->
+  <polyline points="120,360 170,340 210,350 260,300 310,310 360,260 410,270 460,240 510,250 560,230 610,250 660,220"
+            fill="none" stroke="#ffffff" stroke-width="2" />
+  <!-- Secondary muted line -->
+  <polyline points="120,370 170,365 210,360 260,340 310,335 360,310 410,320 460,290 510,300 560,270 610,290 660,260"
+            fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="3,3" />
+
+  <!-- Data point markers -->
+  <circle cx="360" cy="260" r="4" fill="#ffffff" stroke="#000000" stroke-width="2" />
+  <circle cx="560" cy="230" r="4" fill="#ffffff" stroke="#000000" stroke-width="2" />
+  <circle cx="660" cy="220" r="5" fill="#ffffff" stroke="#000000" stroke-width="2" />
+
+  <text x="120" y="402" fill="#666666" font-family="monospace" font-size="9">T-00:00</text>
+  <text x="360" y="402" fill="#666666" font-family="monospace" font-size="9" text-anchor="middle">T-12:00</text>
+  <text x="660" y="402" fill="#ffffff" font-family="monospace" font-size="9" text-anchor="end">CURRENT (LIVE)</text>
+</svg>

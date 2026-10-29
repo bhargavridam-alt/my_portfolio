@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111111" />
+      <stop offset="100%" stop-color="#0a0a0a" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-grad-3)" />
+
+  <!-- Terminal Window Frame -->
+  <rect x="70" y="55" width="660" height="390" rx="8" fill="#0c0c0c" stroke="#333333" stroke-width="1.5" />
+  
+  <!-- Terminal Titlebar -->
+  <rect x="70" y="55" width="660" height="36" rx="8" fill="#1c1c1c" />
+  <line x1="70" y1="91" x2="730" y2="91" stroke="#2a2a2a" stroke-width="1" />
+  <circle cx="95" cy="73" r="5" fill="#444444" />
+  <circle cx="112" cy="73" r="5" fill="#333333" />
+  <circle cx="129" cy="73" r="5" fill="#333333" />
+  <text x="400" y="77" fill="#888888" font-family="monospace" font-size="12" text-anchor="middle">ridam@newton-box: ~/dev/forge-cli</text>
+
+  <!-- Terminal Output -->
+  <text x="100" y="130" fill="#71717a" font-family="monospace" font-size="12">$</text>
+  <text x="120" y="130" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">forge build --release --profile=production</text>
+  
+  <text x="100" y="160" fill="#a1a1aa" font-family="monospace" font-size="11">   Compiling core-engine v0.4.1 (/crates/core)</text>
+  <text x="100" y="185" fill="#a1a1aa" font-family="monospace" font-size="11">   Compiling protocol-buffer-gen v1.2.0</text>
+  <text x="100" y="210" fill="#a1a1aa" font-family="monospace" font-size="11">   Optimizing abstract syntax tree [LLVM target: x86_64-apple-darwin]</text>
+  
+  <!-- Progress Bar Box -->
+  <rect x="100" y="235" width="460" height="14" rx="2" fill="#1a1a1a" stroke="#333333" stroke-width="1" />
+  <rect x="101" y="236" width="390" height="12" rx="1" fill="#ffffff" />
+  <text x="575" y="246" fill="#ffffff" font-family="monospace" font-size="11">[85% / 2.1s]</text>
+
+  <text x="100" y="280" fill="#ffffff" font-family="monospace" font-size="11" font-weight="bold">✔ Build finished in 2.48s [release profile]</text>
+  <text x="100" y="305" fill="#71717a" font-family="monospace" font-size="11">  Binary size: 3.4 MB (stripped symbols, zero external dependencies)</text>
+
+  <text x="100" y="345" fill="#71717a" font-family="monospace" font-size="12">$</text>
+  <text x="120" y="345" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">./target/release/forge test --all</text>
+  <text x="100" y="375" fill="#a1a1aa" font-family="monospace" font-size="11">  test suite: 42 passed, 0 failed, 0 ignored (duration: 38ms)</text>
+  
+  <rect x="100" y="405" width="8" height="15" fill="#ffffff" />
+  <text x="115" y="417" fill="#71717a" font-family="monospace" font-size="11">ready for input</text>
+</svg>
